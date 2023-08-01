@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css">
         <title>Travel Agency</title>
-        <script src="js/script.js"></script>
+        <script defer src="js/script.js"></script>
     </head>
 
     <body>
@@ -41,12 +41,13 @@
             <!--Right Contact Us-->
             <div class="contactus">
                 <h3>Contact Us</h3>
-                <form>
+                <form class="message-form" name="message-form" onsubmit="return validateform()">
                     <div id="yourname">
                         <label for="inputname">Your Name :</label>
                         <input
                             id="inputname"
                             type="text"
+                            name="valid-name"
                         >
                     </div>
                     <div id="youremail">
@@ -54,6 +55,7 @@
                             <input 
                             type="text"
                             id="email"
+                            name="valid-email"
                             >        
                     </div>
                     <div id="yourinterest">

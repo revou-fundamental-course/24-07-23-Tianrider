@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0;
+    box-sizing: border-box;
 }
 
 hr.line{
@@ -84,14 +85,19 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 form label{
     color: aliceblue;
-    display: block;
+    display: flex;
     padding: 10px;
 }
 
+form select{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
 
 #package{
     display: flex;
