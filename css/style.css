@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+hr.line{
+    margin: 0px;
+    padding-top: 5px;
+    color: rgb(96, 96, 96);
+}
+
+.container-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+.container-nav>div{
+    border: 1px solid black;
+    text-align: right;
+    display: inline-flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    height: 50px;
+    width: fit-content;
+    margin-right: auto;
+}
+
+.Home{
+    border-radius: 5px 0 0 5px;
+}
+
+.Callus{
+    border-radius: 0 5px 5px 0;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.subtitle{
+    text-align: center;
+    padding-top: 50px;
+    color: rgb(142, 142, 142);
+}
+
+.container-main{
+    display: flex;
+    margin: 80px;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+  
+.main-paragraph{
+    padding: 10px;
+    flex: 1;
+    background-color: azure;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.contactus {
+    margin-left: 30px;
+    padding: 10px;
+    flex: 1;
+    background-color: rgb(12, 12, 61);
+}
+
+
+.contactus>h3{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label{
+    color: aliceblue;
+    display: block;
+    padding: 10px;
+}
+
+
+#package{
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.destination-1{
+    margin: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.destination-1>div {
+    margin: 20px;
+}
+
+.closing{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.closing h1{
+    margin-bottom: 20px;
+}
+
+.callbutton{
+    padding: 20px;
+    border-radius: 30px;
+    background-color: blue;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logofooter{
+    width: 60px;
+    height: 50px;
+    width: fit-content;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
