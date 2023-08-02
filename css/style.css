@@ -57,6 +57,7 @@ h1{
     margin: 80px;
     margin-top: 30px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
   
 .main-paragraph{
@@ -65,6 +66,18 @@ h1{
     background-color: azure;
     margin-right: 0px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.slider{
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactus {
@@ -112,10 +125,20 @@ form select{
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .destination-1>div {
     margin: 20px;
+    display: flex;
+    width: calc(33.33% - 40px);
+    flex-direction: column;
+}
+
+.destination-1 p {
+    flex-grow: 1;
+    max-height: 100px;
+    overflow-y: auto ;
 }
 
 .closing{
@@ -152,4 +175,28 @@ form select{
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .container-main {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .main-paragraph {
+      margin-right: 0;
+    }
+  
+    .contactus {
+        width: 100%;
+        max-width: 300px;
+    }
 
+    .destination-1 {
+      flex-wrap: wrap;
+    }
+  }
+
+.main-paragraph img{
+    max-width: 100%;
+    height: auto;
+}

@@ -9,3 +9,23 @@ function validateform() {
     }
 }
 
+var slideindex = 1
+setInterval(function(){
+    autonext(1)
+    console.log("loopingg")
+}, 3000)
+
+function autonext(index) {
+    showImage(slideindex += index)
+}
+
+function showImage(index) {
+    const imglist = document.getElementsByClassName("slider")
+    console.log (imglist)
+    if (index > imglist.length) {slideindex = 1}
+    if (index < 1) (slideshow = imglist.lenght)
+    for (i = 0; i < imglist.length; i++) {
+        imglist[i].style.display ="none"
+    }
+    imglist[slideindex - 1].style.display = "block"
+}
