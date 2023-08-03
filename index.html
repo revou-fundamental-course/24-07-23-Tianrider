@@ -6,19 +6,22 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Travel Agency</title>
         <script defer src="js/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     </head>
 
-    <body>s
+    <body>
     <!--Navigation Bar-->
-        <nav class="container-nav">
+        <nav class="container-nav" id="homesec">
             <img src="assets/logo.png" class="logo">
-            <div class="Home">Home</div>
-            <div class="Package">Our Package</div>
-            <div class="Callus">Call Us</div>
+            <div class="Home"> <a  href="#homesec">Home</a></div>
+            <div class="Package"> <a href="#packagesec">Our Package</a></div>
+            <div class="Callus"><a href="#callussec">Call Us</a></div>
         </nav>
         <hr class="line">
     <!-- Title -->
-        <h1>Your Trusted Agent's</h1>
+        <h1 class="title">Your Trusted Agent's</h1>
         <p class="subtitle">Your happineass is our hapiness</p>
 
     <!-- Main Paragraph-->
@@ -26,21 +29,22 @@
             <!--Left Pargraph-->
             <div class="main-paragraph">
                 <img src="assets/travel agent.jpg">
-                <p>liburan ku menjadi menyenangkan bersama travel agentku</p>
-                <br>
-                <img src="assets/Review 1.png" alt="" class="slider">
-                <img src="assets/Review 2.png" alt="" class="slider">
-                <img src="assets/Review 3.png" alt="" class="slider">
-                <p>
-                    Keuntungan Mengikuti Travel Agent Kami :
-                </p>
-                <p>
-                    1. Harga Bersaing <br>
-                    2. Aman terjamin <br>
-                    3. Lokasi Banyak
-                </p>
+                <div class="inner-content">
+                    <p>liburan ku menjadi menyenangkan bersama travel agentku</p>
+                    <br>
+                    <img src="assets/Review 1.png" alt="" class="slider">
+                    <img src="assets/Review 2.png" alt="" class="slider">
+                    <img src="assets/Review 3.png" alt="" class="slider">
+                    <p>
+                        Keuntungan Mengikuti Travel Agent Kami :
+                    </p>
+                    <p>
+                        1. Harga Bersaing <br>
+                        2. Aman terjamin <br>
+                        3. Lokasi Banyak
+                    </p>
+                </div>
             </div>
-            <img src="" alt="">
 
             <!--Right Contact Us-->
             <div class="contactus">
@@ -69,6 +73,8 @@
                                 <option value="Bali">Bali</option>
                                 <option value="Bandung">Bandung</option>
                                 <option value="Jepang">Jepang</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Singapore">Singapore</option>
                             </select>
                     </div>
                     <div>
@@ -84,7 +90,7 @@
         </div>
 
     <!--Package Destination-->
-        <div class="destination-1">
+        <div class="destination-1" id="packagesec">
             <div class="bali">
                 <h2>Bali</h2>
                 <p>Travel dan wisata di Bali, kunjugni cagar budaya dan kuliner yang menarik</p>
@@ -115,7 +121,7 @@
         <hr class="line">
 
     <!--Closing Argument-->
-        <div class="closing">
+        <div class="closing" id="callussec"> 
             <h1>Percayakan Pada Kami</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, illo. Illo, laudantium consectetur reprehenderit fuga temporibus totam enim architecto quas.</p>
             

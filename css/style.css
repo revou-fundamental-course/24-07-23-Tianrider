@@ -2,20 +2,46 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-hr.line{
-    margin: 0px;
-    padding-top: 5px;
-    color: rgb(96, 96, 96);
+body {
+    background-color: rgb(225, 248, 227);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Home:hover {
+    background-color: #C8E4B2;
+    transition: all 0.2s ease;
+}
+
+.Package:hover {
+    background-color: #C8E4B2;
+    transition: all 0.2s ease;
+}
+
+.Callus:hover {
+    background-color: #C8E4B2;
+    transition: all 0.2s ease;
 }
 
 .container-nav{
     display: flex;
     justify-content: flex-end;
-    margin: 20px;
+    padding: 15px;
     box-sizing: border-box;
-    margin-right: 30px;
+    padding-right: 30px;
+    background-color: #9ED2BE;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .container-nav>div{
@@ -41,15 +67,18 @@ hr.line{
     border-radius: 0 5px 5px 0;
 }
 
-h1{
+.title{
     text-align: center;
     padding-top: 20px;
+    color: #3B4948;
+    font-size: 3rem;
 }
 
 .subtitle{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     color: rgb(142, 142, 142);
+    font-size: 1.4rem;
 }
 
 .container-main{
@@ -59,65 +88,139 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-  
+
+.inner-content{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #7EAA92;
+    margin-right: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: rgba(17, 12, 46, 0.15) 100px 48px 100px 0px;
+}
+
+.main-paragraph>p {
+    color: #3B4948;
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
 .main-paragraph{
     padding: 10px;
     flex: 1;
-    background-color: azure;
     margin-right: 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
+    border-radius: 20px;
 }
 
 .slider{
     border-radius: 20px;
     border: 1px solid black;
-    background-color: antiquewhite;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .contactus {
     margin-left: 30px;
     padding: 10px;
-    flex: 1;
-    background-color: rgb(12, 12, 61);
+    flex: 0.5;
+    background-color: #7EAA92;
+    border-radius: 8px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-
 .contactus>h3{
+    margin-top: 20px;
     color: aliceblue;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 0;
+    padding: 30px;
+    padding-top: 0;
 }
 
 form label{
+    font-size: 1.3rem;
     color: aliceblue;
     display: flex;
     padding: 10px;
 }
 
-form select{
-    margin-left: 15px;
-    margin-bottom: 50px;
+form input {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+form select {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+form button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background-color: #C8E4B2;
+    transition: all 0.2s ease ;
+}
+
+form button:hover {
+    background-color: #b9e4cd;
+}
+
+form div {
+    padding: 10px   ;
 }
 
 #package{
     display: flex;
-    background-color: aquamarine;
+    background-color: #9ED2BE;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 170px;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#package h1 {
+    color: #3B4948;
 }
 
 .destination-1{
@@ -142,10 +245,14 @@ form select{
 }
 
 .closing{
+    padding-top: 40px;
+    color: #3B4948;
+    background-color: #9ED2BE;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .closing h1{
@@ -155,7 +262,7 @@ form select{
 .callbutton{
     padding: 20px;
     border-radius: 30px;
-    background-color: blue;
+    background-color: #C8E4B2;
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -180,6 +287,8 @@ form select{
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin-left: 0;
+      margin-right: 0;
     }
   
     .main-paragraph {
@@ -199,4 +308,6 @@ form select{
 .main-paragraph img{
     max-width: 100%;
     height: auto;
+    border: none;
+    background-color:#C8E4B2
 }

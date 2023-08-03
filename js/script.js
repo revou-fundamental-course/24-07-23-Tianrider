@@ -29,3 +29,4 @@ function showImage(index) {
     }
     imglist[slideindex - 1].style.display = "block"
 }
+
