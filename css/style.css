@@ -22,16 +22,19 @@ a{
 .Home:hover {
     background-color: #C8E4B2;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .Package:hover {
     background-color: #C8E4B2;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .Callus:hover {
     background-color: #C8E4B2;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .container-nav{
@@ -203,6 +206,7 @@ form button {
 
 form button:hover {
     background-color: #b9e4cd;
+    cursor: pointer;
 }
 
 form div {
@@ -310,4 +314,9 @@ form div {
     height: auto;
     border: none;
     background-color:#C8E4B2
+}
+
+.callbutton:hover {
+    background-color: #b9e4cd;
+    cursor: pointer;
 }
